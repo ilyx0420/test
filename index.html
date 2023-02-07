@@ -14,7 +14,7 @@
 <script>
 document.getElementById("myP").addEventListener("touchstart", myFunction);
 
-var num = Math.random() * 100;
+var num = Math.round(Math.random() * 100);
 
 function myFunction() {
   document.getElementById("demo").innerHTML = num;
