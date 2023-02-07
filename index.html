@@ -14,10 +14,11 @@
 <script>
 document.getElementById("myP").addEventListener("touchstart", myFunction);
 
-var num = Math.round(Math.random() * 100);
+var max =  4; var num = 1;
+var num = Math.round(Math.random() * (max - min) + min );
 
 function myFunction() {
-  document.getElementById("demo").innerHTML = num;
+  document.getElementById("demo").innerHTML = <img src="ims/im"+num+".jpg" alt="Girl in a jacket" width="500" height="600">;
 }
 </script>
 
