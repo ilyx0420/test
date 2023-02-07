@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>DOM touchstart Event</h1>
+
+<p id="myP">Touch this paragraph to trigger a function that will write "Hello World".</p>
+
+<p><strong>Note:</strong> This example is for touch devices only.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myP").addEventListener("touchstart", myFunction);
+
+var num = Math.random() * 100;
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = num;
+}
+</script>
+
+</body>
+</html>
